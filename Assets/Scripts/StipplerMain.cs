@@ -10,9 +10,9 @@ public class StipplerMain : MonoBehaviour
 
     public GameObject stipplerContainer;
 
-
     public float[] StipplingAreaBounds;
 
+    public float StipplingStepSize;
 
     public float imageResolutionWidth;
     
