@@ -1,2 +1,2 @@
 Sources: https://forum.unity.com/threads/delaunay-voronoi-diagram-library-for-unity.248962/
-Technique: https://mrl.nyu.edu/~ajsecord/npar2002/npar2002_ajsecord_preprint.pdf
+Technique: https://mrl.nyu.edu/~ajsecord/npar2002/npar2002_ajsecssord_preprint.pdf

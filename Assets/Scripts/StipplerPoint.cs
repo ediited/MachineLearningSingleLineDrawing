@@ -8,16 +8,9 @@ public class StipplerPoint
 
     private float x;
     private float y;
-    private float toX;
-    private float toY;
-    private float fromX;
-    private float fromY;
     private float pointID;
     private GameObject pointGO;
     private Vector3 CentroidPosition;
-    float progress;
-    Vector3 from;
-    Vector3 to;
     public bool paired = false;
     
     public StipplerPoint(float xPos, float yPos, float pointID, GameObject Handler)
@@ -46,29 +39,14 @@ public class StipplerPoint
  
     public void draw()
     {
-       
-        if ((toX - x != 0) || (toY - y != 0))
-        {
-            pointGO.transform.localPosition = Vector3.Lerp(from, to, progress);
-            progress += 0.05f;
-            //x = pointGO.transform.localPosition.x;
-           // y = pointGO.transform.localPosition.y;
-        }
-        else
-        {
-            PointGO.transform.localPosition = new Vector3(this.X, 0, this.Y);
-        }
+
+        pointGO.transform.localPosition = new Vector3(X, 0, Y);
 
     }
     public void moveTo(float targetX, float targetY)
     {
-        fromX = x;
-        fromY = y;
-        from = new Vector3(fromX,0, fromY);
-        toX = targetX;
-        toY = targetY;
-        to = new Vector3(toX, 0,toY);
-        progress = 0;
+        X = targetX;
+        Y = targetY;
     }
 
     public float CompareTo(Vector2f comparePart)
