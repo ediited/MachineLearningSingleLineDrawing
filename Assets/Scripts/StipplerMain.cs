@@ -206,7 +206,7 @@ public class StipplerMain : MonoBehaviour
     {
         float[] writerArray = new float[2];
 
-        float relPos = pixelX/
+   
 
         return writerArray;
     }

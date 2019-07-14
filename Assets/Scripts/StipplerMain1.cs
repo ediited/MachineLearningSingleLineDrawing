@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using csDelaunay;
 
-public class StipplerMain : MonoBehaviour
+public class StipplerMain1 : MonoBehaviour
 {
 
     //unity 3D Variables
@@ -206,7 +206,7 @@ public class StipplerMain : MonoBehaviour
     {
         float[] writerArray = new float[2];
 
-        float relPos = pixelX/
+   
 
         return writerArray;
     }
